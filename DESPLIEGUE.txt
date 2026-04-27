@@ -1,0 +1,36 @@
+@echo off
+echo ========================================
+echo   SUBIR STOCKMASTER A INTERNET (GRATIS)
+echo ========================================
+echo.
+echo Pasos para desplegar en Render:
+echo.
+echo 1. Crea una cuenta en: https://render.com
+echo.
+echo 2. Ve a: https://dashboard.render.com/new/select?type=web
+echo.
+echo 3. Selecciona "Build and deploy from a Git repository"
+echo.
+echo 4. Configura:
+echo    - Name: stockmaster-pro
+echo    - Region: Oregon (o el mas cercano)
+echo    - Branch: main
+echo    - Build Command: pip install -r requirements.txt
+echo    - Start Command: python server/server.py
+echo.
+echo 5. En "Environment Variables" agrega:
+echo    - Key: PYTHON_VERSION
+echo    - Value: 3.11.0
+echo.
+echo 6. Click en "Create Web Service"
+echo.
+echo 7. Esperar ~2-3 minutos hasta que diga "Live"
+echo.
+echo 8. Click en el enlace que aparece (ej: https://stockmaster-pro-xxx.onrender.com)
+echo.
+echo ========================================
+echo.
+echo O si prefieres, puedo crear un archivo ZIP
+echo para que lo subas directamente.
+echo.
+pause
